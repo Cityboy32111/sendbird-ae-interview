@@ -56,15 +56,26 @@ def _fetch(url, log):
 def _discover_pages(base_url, home_html):
     soup = BeautifulSoup(home_html, "html.parser")
     found = {}
+    try:
+        base_netloc = urlparse(base_url).netloc
+    except ValueError:
+        return found
     for a in soup.find_all("a", href=True):
         href = a["href"].lower()
+        if href.startswith(("mailto:", "tel:", "javascript:", "#")):
+            continue
         for label, kws in PAGE_KEYWORDS.items():
             if label in found:
                 continue
             if any(k in href for k in kws):
-                full = urljoin(base_url, a["href"])
-                if urlparse(full).netloc == urlparse(base_url).netloc:
-                    found[label] = full
+                # Malformed hrefs (e.g. WordPress shortcodes rendered into a
+                # link) can raise ValueError inside urljoin/urlparse; skip them.
+                try:
+                    full = urljoin(base_url, a["href"])
+                    if urlparse(full).netloc == base_netloc:
+                        found[label] = full
+                except ValueError:
+                    continue
     return found
 
 
@@ -85,7 +96,7 @@ def _count_locations(blob):
 
 
 def scrape_one(acc, log):
-    base = acc.get("website")
+    base = acc.get("website") or ""
     if not base.startswith("http"):
         base = "https://" + base
     home = _fetch(base, log)
