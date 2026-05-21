@@ -160,7 +160,16 @@ def scan_all(week, limit=None):
     if limit:
         accounts = accounts[:limit]
     for i, acc in enumerate(accounts, 1):
-        scan_one(acc)
+        try:
+            scan_one(acc)
+        except Exception as e:  # noqa: BLE001 - one bad domain must not abort the run
+            acc.setdefault("domain_scan_internal", {})
+            acc["domain_scan_status"] = "failed"
+            acc["domain_scan_error"] = f"{type(e).__name__}: {e}"
+            log.warning(
+                "domain scan failed | company=%r domain=%r error=%s",
+                acc.get("company_name"), acc.get("domain"), f"{type(e).__name__}: {e}",
+            )
         if i % 10 == 0:
             log.info("scanned %d/%d domains", i, len(accounts))
     c.save_json(c.processed_path(week, "accounts_scanned.json"), accounts)

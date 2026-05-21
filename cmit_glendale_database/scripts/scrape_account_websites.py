@@ -193,13 +193,53 @@ def scrape_all(week, limit=None):
     if limit:
         accounts = accounts[:limit]
     site_dir = c.RAW_WEBSITES / week
+    attempted = succeeded = failed = 0
     for i, acc in enumerate(accounts, 1):
-        site = scrape_one(acc, log)
-        c.save_json(site_dir / f"{acc['account_id']}.json", site)
-        if i % 10 == 0:
-            log.info("scraped %d/%d websites", i, len(accounts))
+        attempted += 1
+        # Per-account isolation: no single broken site (malformed href, bad SSL,
+        # timeout, redirect loop, invalid URL, unparseable HTML) may abort the run.
+        try:
+            site = scrape_one(acc, log)
+            c.save_json(site_dir / f"{acc['account_id']}.json", site)
+            if site.get("fetched"):
+                acc["website_scrape_status"] = "success"
+                succeeded += 1
+            else:
+                acc["website_scrape_status"] = "failed"
+                acc["website_scrape_error"] = "site unreachable (no HTML fetched)"
+                failed += 1
+                log.warning(
+                    "website unreachable | company=%r domain=%r url=%r",
+                    acc.get("company_name"), acc.get("domain"), acc.get("website"),
+                )
+        except Exception as e:  # noqa: BLE001 - deliberately catch-all per account
+            failed += 1
+            acc["website_scrape_status"] = "failed"
+            acc["website_scrape_error"] = f"{type(e).__name__}: {e}"
+            # Guarantee downstream steps (scoring, briefing) still have usable
+            # fields so the account survives in the backup pool.
+            acc.setdefault("website_signals", {})
+            try:
+                _estimate_employees(acc, acc["website_signals"])
+            except Exception:  # noqa: BLE001
+                acc.setdefault("estimated_employees_min", 0)
+                acc.setdefault("estimated_employees_max", 0)
+            log.warning(
+                "website scrape failed | company=%r domain=%r url=%r error=%s",
+                acc.get("company_name"), acc.get("domain"), acc.get("website"),
+                f"{type(e).__name__}: {e}",
+            )
+        if i % 25 == 0:
+            log.info("scraped %d/%d websites (ok=%d failed=%d)", i, len(accounts), succeeded, failed)
     c.save_json(c.processed_path(week, "accounts_enriched.json"), accounts)
-    log.info("website scrape complete for %d accounts", len(accounts))
+    c.save_json(
+        c.processed_path(week, "website_scrape_summary.json"),
+        {"attempted": attempted, "succeeded": succeeded, "failed": failed},
+    )
+    log.info(
+        "website scrape complete: attempted=%d succeeded=%d failed=%d",
+        attempted, succeeded, failed,
+    )
     return accounts
 
 
