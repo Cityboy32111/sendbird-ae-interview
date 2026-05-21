@@ -1,0 +1,52 @@
+{
+  "description": "Internal scoring weights. Each dimension is scored 0-5 then multiplied by its weight. total_score is the weighted sum normalized to 0-100. Tiers are assigned from total_score. This file is internal only and must never be exposed in the workbook.",
+  "dimensions": {
+    "vertical_fit":          {"weight": 3.0, "max": 5},
+    "employee_fit":          {"weight": 3.0, "max": 5},
+    "data_sensitivity":      {"weight": 3.0, "max": 5},
+    "security_gap":          {"weight": 2.5, "max": 5},
+    "operational_complexity":{"weight": 1.5, "max": 5},
+    "growth_activity":       {"weight": 1.0, "max": 5},
+    "buyer_reachability":    {"weight": 1.5, "max": 5},
+    "local_fit":             {"weight": 1.5, "max": 5}
+  },
+  "employee_fit_curve": {
+    "ideal_min": 8,
+    "ideal_max": 30,
+    "in_range_score": 5,
+    "near_range_score": 3,
+    "out_of_range_score": 1,
+    "near_range_buffer": 5
+  },
+  "security_gap_signals": {
+    "no_https": 2,
+    "missing_email_authentication": 2,
+    "weak_security_headers": 1,
+    "outdated_website": 1,
+    "unprotected_forms": 1,
+    "exposed_portal": 1,
+    "max": 5
+  },
+  "operational_complexity_signals": {
+    "multiple_locations": 2,
+    "online_portal": 1,
+    "online_booking": 1,
+    "online_payment": 1,
+    "many_services": 1,
+    "max": 5
+  },
+  "growth_activity_signals": {
+    "careers_page": 2,
+    "hiring_keywords": 2,
+    "high_review_count": 1,
+    "max": 5
+  },
+  "priority_tiers": {
+    "A": {"min_score": 75, "label": "Tier A - Call This Week"},
+    "B": {"min_score": 60, "label": "Tier B - High Priority"},
+    "C": {"min_score": 45, "label": "Tier C - Qualified"},
+    "D": {"min_score": 0,  "label": "Tier D - Backup"}
+  },
+  "apollo_queue_size": 100,
+  "final_target_count": 50
+}

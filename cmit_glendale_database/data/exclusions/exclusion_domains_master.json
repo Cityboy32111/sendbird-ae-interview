@@ -1,0 +1,4 @@
+{
+  "description": "Master exclusion list for domains. Updated only after QA passes.",
+  "domains": []
+}

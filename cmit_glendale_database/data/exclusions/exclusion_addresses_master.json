@@ -1,0 +1,4 @@
+{
+  "description": "Master exclusion list for addresses. Updated only after QA passes.",
+  "addresses": []
+}

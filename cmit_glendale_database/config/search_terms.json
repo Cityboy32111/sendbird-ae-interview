@@ -1,0 +1,82 @@
+{
+  "description": "Google Maps discovery search terms grouped by vertical. Each term is run as a small Apify job (25-50 results).",
+  "results_per_term_min": 25,
+  "results_per_term_max": 50,
+  "vertical_groups": {
+    "legal": {
+      "vertical": "Legal",
+      "terms": [
+        "law firm Glendale CA",
+        "law firm Pasadena CA",
+        "business law firm Glendale CA",
+        "estate planning law firm Pasadena CA",
+        "employment law firm Los Angeles County",
+        "family law firm Los Angeles County",
+        "personal injury law firm Los Angeles County",
+        "immigration law firm Los Angeles County"
+      ]
+    },
+    "dental": {
+      "vertical": "Dental",
+      "terms": [
+        "dental practice Glendale CA",
+        "dentist Pasadena CA",
+        "orthodontist Los Angeles County",
+        "oral surgeon Los Angeles County",
+        "pediatric dentist Los Angeles County",
+        "cosmetic dentist Los Angeles County",
+        "multi dentist practice Los Angeles County"
+      ]
+    },
+    "medical": {
+      "vertical": "Medical",
+      "terms": [
+        "medical clinic Glendale CA",
+        "primary care clinic Pasadena CA",
+        "dermatology clinic Los Angeles County",
+        "physical therapy clinic Los Angeles County",
+        "chiropractic clinic Los Angeles County",
+        "mental health clinic Los Angeles County",
+        "urgent care Los Angeles County",
+        "specialty medical clinic Los Angeles County"
+      ]
+    },
+    "cpa_accounting": {
+      "vertical": "CPA and Accounting",
+      "terms": [
+        "CPA firm Glendale CA",
+        "CPA firm Pasadena CA",
+        "accounting firm Glendale CA",
+        "accounting firm Pasadena CA",
+        "tax firm Los Angeles County",
+        "bookkeeping firm Los Angeles County",
+        "business accounting firm Los Angeles County"
+      ]
+    },
+    "insurance_financial": {
+      "vertical": "Insurance and Financial",
+      "terms": [
+        "insurance agency Glendale CA",
+        "insurance agency Pasadena CA",
+        "independent insurance agency Los Angeles County",
+        "financial advisory firm Los Angeles County",
+        "wealth management firm Los Angeles County",
+        "employee benefits broker Los Angeles County"
+      ]
+    },
+    "commercial_smb": {
+      "vertical": "Commercial SMB",
+      "terms": [
+        "property management company Glendale CA",
+        "property management company Pasadena CA",
+        "construction company Glendale CA",
+        "construction company Los Angeles County",
+        "architecture firm Los Angeles County",
+        "engineering firm Los Angeles County",
+        "manufacturing company Los Angeles County",
+        "private school Los Angeles County",
+        "nonprofit organization Los Angeles County"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "description": "ICP vertical definitions. category_keywords match Google Maps categories. data_sensitivity and base_vertical_fit feed scoring. compliance_angle is client-safe language.",
+  "keep_verticals": {
+    "Legal": {
+      "sub_verticals": ["Business Law", "Estate Planning", "Employment Law", "Family Law", "Personal Injury", "Immigration", "General Practice"],
+      "category_keywords": ["law firm", "lawyer", "attorney", "legal services", "law office", "legal aid"],
+      "data_sensitivity": 5,
+      "base_vertical_fit": 5,
+      "compliance_angle": "Handles privileged client records and case files that require confidentiality safeguards",
+      "data_keywords": ["client", "case", "matter", "confidential", "retainer", "litigation"]
+    },
+    "Dental": {
+      "sub_verticals": ["General Dentistry", "Orthodontics", "Oral Surgery", "Pediatric Dentistry", "Cosmetic Dentistry", "Multi-Provider Practice"],
+      "category_keywords": ["dentist", "dental", "orthodontist", "oral surgeon", "endodontist", "periodontist"],
+      "data_sensitivity": 5,
+      "base_vertical_fit": 5,
+      "compliance_angle": "Maintains protected health information subject to HIPAA safeguards",
+      "data_keywords": ["patient", "appointment", "insurance", "treatment", "x-ray", "records"]
+    },
+    "Medical": {
+      "sub_verticals": ["Primary Care", "Dermatology", "Physical Therapy", "Chiropractic", "Mental Health", "Urgent Care", "Specialty Clinic"],
+      "category_keywords": ["clinic", "medical", "physician", "doctor", "urgent care", "dermatology", "physical therapy", "chiropractor", "mental health", "wellness center"],
+      "data_sensitivity": 5,
+      "base_vertical_fit": 5,
+      "compliance_angle": "Maintains protected health information subject to HIPAA safeguards",
+      "data_keywords": ["patient", "appointment", "insurance", "treatment", "records", "telehealth"]
+    },
+    "CPA and Accounting": {
+      "sub_verticals": ["CPA Firm", "Accounting Firm", "Tax Firm", "Bookkeeping", "Business Accounting"],
+      "category_keywords": ["accountant", "accounting", "cpa", "tax", "bookkeeping", "tax preparation"],
+      "data_sensitivity": 5,
+      "base_vertical_fit": 5,
+      "compliance_angle": "Handles taxpayer financial records subject to IRS Publication 4557 safeguard requirements",
+      "data_keywords": ["tax", "client", "financial", "payroll", "audit", "return"]
+    },
+    "Insurance and Financial": {
+      "sub_verticals": ["Insurance Agency", "Independent Agency", "Financial Advisory", "Wealth Management", "Employee Benefits"],
+      "category_keywords": ["insurance", "financial advisor", "wealth management", "financial planning", "investment", "benefits broker"],
+      "data_sensitivity": 5,
+      "base_vertical_fit": 4,
+      "compliance_angle": "Handles client financial and PII data subject to GLBA safeguard requirements",
+      "data_keywords": ["client", "policy", "financial", "investment", "premium", "claims"]
+    },
+    "Commercial SMB": {
+      "sub_verticals": ["Property Management", "Construction", "Architecture", "Engineering", "Manufacturing", "Private School", "Nonprofit"],
+      "category_keywords": ["property management", "construction", "architect", "engineering", "manufacturer", "manufacturing", "school", "nonprofit", "non-profit", "general contractor"],
+      "data_sensitivity": 3,
+      "base_vertical_fit": 3,
+      "compliance_angle": "Operates business-critical systems and stores tenant, donor, or project records",
+      "data_keywords": ["tenant", "project", "donor", "student", "vendor", "contract"]
+    }
+  },
+  "reject_categories": [
+    "restaurant", "cafe", "coffee", "bar", "salon", "barber", "spa", "nail",
+    "retail", "store", "shop", "boutique", "grocery", "supermarket",
+    "gym", "fitness", "hotel", "motel", "gas station", "auto repair",
+    "real estate agent", "realtor", "consultant", "freelance",
+    "fast food", "bakery", "florist", "pet", "laundry", "dry clean"
+  ],
+  "national_franchise_names": [
+    "h&r block", "jackson hewitt", "liberty tax", "aspen dental", "western dental",
+    "allstate", "state farm", "farmers insurance", "geico", "edward jones",
+    "ameriprise", "merrill lynch", "morgan stanley", "wells fargo advisors"
+  ]
+}

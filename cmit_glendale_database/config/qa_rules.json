@@ -1,0 +1,33 @@
+{
+  "description": "Final QA gate. The workbook does not ship unless all hard checks pass against the Final Sales Ready Accounts tab.",
+  "required_final_count": 50,
+  "hard_checks": {
+    "exact_record_count": 50,
+    "all_real_people": true,
+    "all_verified_emails": true,
+    "all_decision_maker_titles": true,
+    "all_la_county": true,
+    "all_have_website": true,
+    "unique_domains": true,
+    "unique_emails": true,
+    "zero_info_only_contacts": true,
+    "zero_business_listing_emails": true,
+    "zero_company_name_as_person": true,
+    "zero_solo_operators": true,
+    "zero_prior_run_duplicates": true,
+    "zero_methodology_exposure": true,
+    "every_account_has_managed_it_trigger": true,
+    "every_account_has_opening_line": true,
+    "every_account_has_source_evidence": true
+  },
+  "forbidden_workbook_terms": [
+    "Apify", "scraper", "scraping", "scrape", "DNS scan", "DNS",
+    "SPF", "DMARC", "DKIM", "propensity model", "secret sauce",
+    "formula", "actor", "automation", "MX record", "nameserver"
+  ],
+  "info_email_local_parts": [
+    "info", "support", "contact", "hello", "admin", "office", "team",
+    "sales", "help", "billing", "noreply", "no-reply", "frontdesk",
+    "reception", "appointments", "scheduling", "general", "inquiries"
+  ]
+}

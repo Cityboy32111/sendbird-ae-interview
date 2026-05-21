@@ -1,0 +1,32 @@
+{
+  "description": "LA County city allowlist used for location filtering. A normalized city must match this list (case-insensitive) to pass the LA County hard filter. zip_prefixes is a secondary signal for borderline records.",
+  "county_name": "Los Angeles County",
+  "state": "CA",
+  "cities": [
+    "Agoura Hills", "Alhambra", "Arcadia", "Artesia", "Avalon", "Azusa",
+    "Baldwin Park", "Bell", "Bell Gardens", "Bellflower", "Beverly Hills",
+    "Bradbury", "Burbank", "Calabasas", "Carson", "Cerritos", "Claremont",
+    "Commerce", "Compton", "Covina", "Cudahy", "Culver City", "Diamond Bar",
+    "Downey", "Duarte", "El Monte", "El Segundo", "Gardena", "Glendale",
+    "Glendora", "Hawaiian Gardens", "Hawthorne", "Hermosa Beach", "Hidden Hills",
+    "Huntington Park", "Industry", "Inglewood", "Irwindale", "La Canada Flintridge",
+    "La Habra Heights", "La Mirada", "La Puente", "La Verne", "Lakewood",
+    "Lancaster", "Lawndale", "Lomita", "Long Beach", "Los Angeles", "Lynwood",
+    "Malibu", "Manhattan Beach", "Maywood", "Monrovia", "Montebello",
+    "Monterey Park", "Norwalk", "Palmdale", "Palos Verdes Estates", "Paramount",
+    "Pasadena", "Pico Rivera", "Pomona", "Rancho Palos Verdes", "Redondo Beach",
+    "Rolling Hills", "Rolling Hills Estates", "Rosemead", "San Dimas",
+    "San Fernando", "San Gabriel", "San Marino", "Santa Clarita", "Santa Fe Springs",
+    "Santa Monica", "Sierra Madre", "Signal Hill", "South El Monte", "South Gate",
+    "South Pasadena", "Temple City", "Torrance", "Vernon", "Walnut",
+    "West Covina", "West Hollywood", "Westlake Village", "Whittier",
+    "North Hollywood", "Studio City", "Sherman Oaks", "Encino", "Tarzana",
+    "Woodland Hills", "Canoga Park", "Reseda", "Van Nuys", "Northridge",
+    "Granada Hills", "Chatsworth", "Sylmar", "Sun Valley", "Tujunga",
+    "Sunland", "Eagle Rock", "Highland Park", "Montrose", "La Crescenta",
+    "Altadena", "Universal City", "Marina del Rey", "Playa Vista",
+    "Valencia", "Stevenson Ranch", "Newhall", "Saugus", "Canyon Country",
+    "Hacienda Heights", "Rowland Heights", "Valinda", "Willowbrook"
+  ],
+  "zip_prefixes": ["900", "901", "902", "903", "904", "905", "906", "907", "908", "910", "911", "912", "913", "914", "915", "916", "917", "918", "935"]
+}

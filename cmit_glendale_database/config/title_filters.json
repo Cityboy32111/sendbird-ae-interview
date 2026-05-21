@@ -1,0 +1,27 @@
+{
+  "description": "Decision-maker title filters for Apollo contact selection. accepted_titles match (case-insensitive substring) a contact's title. Tiered for ranking the best contact per account.",
+  "accepted_titles": [
+    "Owner", "Founder", "Co-Founder", "President", "CEO", "Chief Executive Officer",
+    "Managing Partner", "Partner", "Principal",
+    "Practice Administrator", "Practice Manager", "Office Manager",
+    "Operations Manager", "Director of Operations",
+    "Controller", "CFO", "Chief Financial Officer", "COO", "Chief Operating Officer",
+    "Administrator", "Business Manager", "Executive Director", "Managing Director"
+  ],
+  "title_tiers": {
+    "tier_1_owner": ["Owner", "Founder", "Co-Founder", "President", "CEO", "Chief Executive Officer", "Managing Partner", "Principal", "Executive Director"],
+    "tier_2_partner": ["Partner", "Managing Director"],
+    "tier_3_finance_ops": ["CFO", "Chief Financial Officer", "COO", "Chief Operating Officer", "Controller", "Director of Operations"],
+    "tier_4_admin": ["Practice Administrator", "Practice Manager", "Office Manager", "Operations Manager", "Administrator", "Business Manager"]
+  },
+  "reject_title_keywords": [
+    "intern", "assistant", "receptionist", "associate attorney", "hygienist",
+    "technician", "sales representative", "marketing coordinator", "student"
+  ],
+  "reject_email_patterns": [
+    "info@", "support@", "contact@", "hello@", "admin@", "office@", "team@",
+    "sales@", "help@", "billing@", "noreply@", "no-reply@", "frontdesk@",
+    "reception@", "appointments@", "scheduling@", "general@", "inquiries@"
+  ],
+  "min_email_confidence": "verified"
+}

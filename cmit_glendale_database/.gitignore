@@ -1,0 +1,23 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated data (may contain PII / scraped content)
+data/raw/
+data/processed/
+data/final/
+outputs/**/*.xlsx
+logs/*.log
+
+# Keep folder placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/final/.gitkeep
+!data/exclusions/
