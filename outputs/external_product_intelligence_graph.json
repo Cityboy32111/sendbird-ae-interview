@@ -1,0 +1,5630 @@
+{
+  "generated": "2026-05-21",
+  "phase": "1",
+  "confidence_floor": 0.6,
+  "note": "Phase-1 sample (25 companies). Feedback & competitive-pressure fields intentionally absent (sources off-limits in Phase 1).",
+  "companies": [
+    {
+      "company_name": "Linear",
+      "website": "https://linear.app",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://linear.app/pricing",
+          "evidence_id": 1,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://linear.app/pricing",
+          "confidence": 0.9,
+          "source_url": "https://linear.app/pricing",
+          "evidence_id": 2,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://linear.app/pricing",
+          "evidence_id": 3,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://linear.app/docs",
+          "evidence_id": 4,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://linear.app/docs",
+          "confidence": 0.9,
+          "source_url": "https://linear.app/docs",
+          "evidence_id": 5,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 6,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://linear.app/changelog",
+          "confidence": 0.9,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 7,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://linear.app/integrations",
+          "evidence_id": 8,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://linear.app/integrations",
+          "confidence": 0.9,
+          "source_url": "https://linear.app/integrations",
+          "evidence_id": 9,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "hotjar,posthog",
+          "confidence": 0.8,
+          "source_url": "https://linear.app",
+          "evidence_id": 224,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "posthog",
+          "confidence": 0.8,
+          "source_url": "https://linear.app",
+          "evidence_id": 226,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.89",
+          "confidence": 0.89,
+          "source_url": "https://linear.app",
+          "evidence_id": 225,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "posthog_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://linear.app",
+          "evidence_id": 223,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "hotjar_detected": {
+          "value": "True",
+          "confidence": 0.88,
+          "source_url": "https://linear.app",
+          "evidence_id": 221,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "23",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/Linear",
+          "evidence_id": 369,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/Linear",
+          "evidence_id": 370,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "3",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/Linear",
+          "evidence_id": 371,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/Linear",
+          "evidence_id": 372,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 476,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-14",
+          "confidence": 0.8,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 477,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "20",
+          "confidence": 0.7,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 478,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://linear.app/changelog",
+          "evidence_id": 479,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 524,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 525,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "10.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 526,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "2.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 527,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 528,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 529,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "86.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 530,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 531,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "64.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 532,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "60.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 533,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Notion",
+      "website": "https://notion.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://notion.com/pricing",
+          "evidence_id": 10,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://notion.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://notion.com/pricing",
+          "evidence_id": 11,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://notion.com/pricing",
+          "evidence_id": 12,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://notion.com/pricing",
+          "evidence_id": 13,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://notion.com/developers",
+          "evidence_id": 14,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://notion.com/developers",
+          "confidence": 0.9,
+          "source_url": "https://notion.com/developers",
+          "evidence_id": 15,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 16,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://notion.com/releases",
+          "confidence": 0.9,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 17,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://notion.com/integrations",
+          "evidence_id": 18,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://notion.com/integrations",
+          "confidence": 0.9,
+          "source_url": "https://notion.com/integrations",
+          "evidence_id": 19,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "133",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 373,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 374,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 375,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "4",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 376,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "3",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 377,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "10",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 378,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "15",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 379,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_ops_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/notion",
+          "evidence_id": 380,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 480,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-13",
+          "confidence": 0.8,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 481,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "10",
+          "confidence": 0.7,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 482,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://notion.com/releases",
+          "evidence_id": 483,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 534,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 535,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "41.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 536,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "40.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 537,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "65.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 538,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 539,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 540,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "93.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 541,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "62.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 542,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "76.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 543,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Vercel",
+      "website": "https://vercel.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://vercel.com/pricing",
+          "evidence_id": 20,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://vercel.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://vercel.com/pricing",
+          "evidence_id": 21,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://vercel.com/pricing",
+          "evidence_id": 22,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://vercel.com/pricing",
+          "evidence_id": 23,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://vercel.com/docs",
+          "evidence_id": 24,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://vercel.com/docs",
+          "confidence": 0.9,
+          "source_url": "https://vercel.com/docs",
+          "evidence_id": 25,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 26,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://vercel.com/changelog",
+          "confidence": 0.9,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 27,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://vercel.com/marketplace",
+          "evidence_id": 28,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://vercel.com/marketplace",
+          "confidence": 0.9,
+          "source_url": "https://vercel.com/marketplace",
+          "evidence_id": 29,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "78",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "evidence_id": 381,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "evidence_id": 382,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "evidence_id": 383,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "evidence_id": 384,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "evidence_id": 385,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 484,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 485,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "3",
+          "confidence": 0.7,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 486,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://vercel.com/changelog",
+          "evidence_id": 487,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 544,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 545,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "7.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 546,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "6.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 547,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "40.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 548,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 549,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 550,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 551,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "39.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 552,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "61.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 553,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Webflow",
+      "website": "https://webflow.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://webflow.com/pricing",
+          "evidence_id": 30,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://webflow.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://webflow.com/pricing",
+          "evidence_id": 31,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://webflow.com/pricing",
+          "evidence_id": 32,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developers.webflow.com",
+          "evidence_id": 33,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developers.webflow.com",
+          "confidence": 0.9,
+          "source_url": "https://developers.webflow.com",
+          "evidence_id": 34,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://webflow.com/enterprise",
+          "evidence_id": 35,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://webflow.com/enterprise",
+          "confidence": 0.9,
+          "source_url": "https://webflow.com/enterprise",
+          "evidence_id": 36,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://webflow.com/apps",
+          "evidence_id": 37,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://webflow.com/apps",
+          "confidence": 0.9,
+          "source_url": "https://webflow.com/apps",
+          "evidence_id": 38,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "35",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/webflow/jobs",
+          "evidence_id": 386,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/webflow/jobs",
+          "evidence_id": 387,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/webflow/jobs",
+          "evidence_id": 388,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/webflow/jobs",
+          "evidence_id": 389,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "4",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/webflow/jobs",
+          "evidence_id": 390,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 554,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 555,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "12.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 556,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "13.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 557,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 558,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 559,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "56.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 560,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "83.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 561,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "4.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 562,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "49.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 563,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Retool",
+      "website": "https://retool.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://retool.com/pricing",
+          "evidence_id": 39,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://retool.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://retool.com/pricing",
+          "evidence_id": 40,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://retool.com/pricing",
+          "evidence_id": 41,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://docs.retool.com/",
+          "evidence_id": 42,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://docs.retool.com/",
+          "confidence": 0.9,
+          "source_url": "https://docs.retool.com/",
+          "evidence_id": 43,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://docs.retool.com/changelog",
+          "evidence_id": 44,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://docs.retool.com/changelog",
+          "confidence": 0.9,
+          "source_url": "https://docs.retool.com/changelog",
+          "evidence_id": 45,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://retool.com/build-enterprise-apps/apps",
+          "evidence_id": 46,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://retool.com/build-enterprise-apps/apps",
+          "confidence": 0.9,
+          "source_url": "https://retool.com/build-enterprise-apps/apps",
+          "evidence_id": 47,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager,segment",
+          "confidence": 0.8,
+          "source_url": "https://retool.com",
+          "evidence_id": 232,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "segment",
+          "confidence": 0.8,
+          "source_url": "https://retool.com",
+          "evidence_id": 234,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.75",
+          "confidence": 0.75,
+          "source_url": "https://retool.com",
+          "evidence_id": 233,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "segment_detected": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://retool.com",
+          "evidence_id": 231,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://retool.com/blog",
+          "evidence_id": 488,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-08",
+          "confidence": 0.8,
+          "source_url": "https://retool.com/blog",
+          "evidence_id": 489,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "5",
+          "confidence": 0.7,
+          "source_url": "https://retool.com/blog",
+          "evidence_id": 490,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://retool.com/blog",
+          "evidence_id": 491,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 564,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 565,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 566,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 567,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "47.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 568,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 569,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "86.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 570,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 571,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "39.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 572,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "51.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 573,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "monday.com",
+      "website": "https://monday.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://monday.com/pricing",
+          "evidence_id": 48,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://monday.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://monday.com/pricing",
+          "evidence_id": 49,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://monday.com/pricing",
+          "evidence_id": 50,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://monday.com/pricing",
+          "evidence_id": 51,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://monday.com/workdocs",
+          "evidence_id": 52,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://monday.com/workdocs",
+          "confidence": 0.9,
+          "source_url": "https://monday.com/workdocs",
+          "evidence_id": 53,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://monday.com/whats-new",
+          "evidence_id": 54,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://monday.com/whats-new",
+          "confidence": 0.9,
+          "source_url": "https://monday.com/whats-new",
+          "evidence_id": 55,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://monday.com/marketplace",
+          "evidence_id": 56,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://monday.com/marketplace",
+          "confidence": 0.9,
+          "source_url": "https://monday.com/marketplace",
+          "evidence_id": 57,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "fullstory",
+          "confidence": 0.8,
+          "source_url": "https://monday.com",
+          "evidence_id": 237,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.95",
+          "confidence": 0.95,
+          "source_url": "https://monday.com",
+          "evidence_id": 238,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "fullstory_detected": {
+          "value": "True",
+          "confidence": 0.95,
+          "source_url": "https://monday.com/pricing",
+          "evidence_id": 235,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://monday.com/whats-new",
+          "evidence_id": 492,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-17",
+          "confidence": 0.8,
+          "source_url": "https://monday.com/whats-new",
+          "evidence_id": 493,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "11",
+          "confidence": 0.7,
+          "source_url": "https://monday.com/whats-new",
+          "evidence_id": 494,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://monday.com/p/news/",
+          "evidence_id": 495,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 574,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 575,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 576,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 577,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "68.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 578,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 579,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 580,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 581,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "47.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 582,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "62.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 583,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Datadog",
+      "website": "https://datadoghq.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.datadoghq.com/pricing/",
+          "evidence_id": 58,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://www.datadoghq.com/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://www.datadoghq.com/pricing/",
+          "evidence_id": 59,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://www.datadoghq.com/pricing/",
+          "evidence_id": 60,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://www.datadoghq.com/pricing/",
+          "evidence_id": 61,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://docs.datadoghq.com/api/",
+          "evidence_id": 62,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://docs.datadoghq.com/api/",
+          "confidence": 0.9,
+          "source_url": "https://docs.datadoghq.com/api/",
+          "evidence_id": 63,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.datadoghq.com/about/latest-news/press-releases/",
+          "evidence_id": 64,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://www.datadoghq.com/about/latest-news/press-releases/",
+          "confidence": 0.9,
+          "source_url": "https://www.datadoghq.com/about/latest-news/press-releases/",
+          "evidence_id": 65,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.datadoghq.com/marketplacepartners/",
+          "evidence_id": 66,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://www.datadoghq.com/marketplacepartners/",
+          "confidence": 0.9,
+          "source_url": "https://www.datadoghq.com/marketplacepartners/",
+          "evidence_id": 67,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://datadoghq.com",
+          "evidence_id": 240,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.85",
+          "confidence": 0.85,
+          "source_url": "https://datadoghq.com",
+          "evidence_id": 241,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "414",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 391,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "16",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 392,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "6",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 393,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 394,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 395,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "35",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 396,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "25",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+          "evidence_id": 397,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 584,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 585,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "55.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 586,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "75.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 587,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 588,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 589,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 590,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "83.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 591,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "22.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 592,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "74.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 593,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Ramp",
+      "website": "https://ramp.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://ramp.com/pricing",
+          "evidence_id": 68,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://ramp.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://ramp.com/pricing",
+          "evidence_id": 69,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://ramp.com/pricing",
+          "evidence_id": 70,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://ramp.com/pricing",
+          "evidence_id": 71,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://ramp.com/integrations",
+          "evidence_id": 72,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://ramp.com/integrations",
+          "confidence": 0.9,
+          "source_url": "https://ramp.com/integrations",
+          "evidence_id": 73,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "114",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 398,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 399,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 400,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "7",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 401,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "10",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 402,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "7",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+          "evidence_id": 403,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 594,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "33.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 595,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "26.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 596,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "30.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 597,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 598,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 599,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "49.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 600,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "39.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 601,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "10.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 602,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "49.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 603,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Brex",
+      "website": "https://brex.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://brex.com/pricing",
+          "evidence_id": 74,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://brex.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://brex.com/pricing",
+          "evidence_id": 75,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://brex.com/pricing",
+          "evidence_id": 76,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://brex.com/product/api",
+          "evidence_id": 77,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://brex.com/product/api",
+          "confidence": 0.9,
+          "source_url": "https://brex.com/product/api",
+          "evidence_id": 78,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://brex.com/product-announcements",
+          "evidence_id": 79,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://brex.com/product-announcements",
+          "confidence": 0.9,
+          "source_url": "https://brex.com/product-announcements",
+          "evidence_id": 80,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://brex.com/product/integrations",
+          "evidence_id": 81,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://brex.com/product/integrations",
+          "confidence": 0.9,
+          "source_url": "https://brex.com/product/integrations",
+          "evidence_id": 82,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://brex.com",
+          "evidence_id": 244,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.85",
+          "confidence": 0.85,
+          "source_url": "https://brex.com",
+          "evidence_id": 245,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "231",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 404,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "22",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 405,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "5",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 406,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "5",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 407,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "14",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 408,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "12",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 409,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "10",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/brex/jobs",
+          "evidence_id": 410,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 604,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 605,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "79.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 606,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "49.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 607,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 608,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 609,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "56.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 610,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "96.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 611,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "31.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 612,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "67.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 613,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Intercom",
+      "website": "https://intercom.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://intercom.com/pricing",
+          "evidence_id": 83,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://intercom.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://intercom.com/pricing",
+          "evidence_id": 84,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://intercom.com/pricing",
+          "evidence_id": 85,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://intercom.com/pricing",
+          "evidence_id": 86,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developers.intercom.com/",
+          "evidence_id": 87,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developers.intercom.com/",
+          "confidence": 0.9,
+          "source_url": "https://developers.intercom.com/",
+          "evidence_id": 88,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.intercom.com/app-store",
+          "evidence_id": 89,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://www.intercom.com/app-store",
+          "confidence": 0.9,
+          "source_url": "https://www.intercom.com/app-store",
+          "evidence_id": 90,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "168",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 411,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "11",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 412,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "5",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 413,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "14",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 414,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 415,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "39",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 416,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "7",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/intercom/jobs",
+          "evidence_id": 417,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://www.intercom.com/blog/",
+          "evidence_id": 496,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://www.intercom.com/blog/",
+          "evidence_id": 497,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "8",
+          "confidence": 0.7,
+          "source_url": "https://www.intercom.com/blog/",
+          "evidence_id": 498,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://www.intercom.com/blog/",
+          "evidence_id": 499,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 614,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 615,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "61.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 616,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 617,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "58.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 618,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 619,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "60.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 620,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "86.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 621,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "67.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 622,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "80.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 623,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Figma",
+      "website": "https://figma.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.figma.com/pricing/",
+          "evidence_id": 91,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://www.figma.com/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://www.figma.com/pricing/",
+          "evidence_id": 92,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://www.figma.com/pricing/",
+          "evidence_id": 93,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://www.figma.com/developers",
+          "evidence_id": 94,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://www.figma.com/developers",
+          "confidence": 0.9,
+          "source_url": "https://www.figma.com/developers",
+          "evidence_id": 95,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 96,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://www.figma.com/release-notes/",
+          "confidence": 0.9,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 97,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.figma.com/downloads/",
+          "evidence_id": 98,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://www.figma.com/downloads/",
+          "confidence": 0.9,
+          "source_url": "https://www.figma.com/downloads/",
+          "evidence_id": 99,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "162",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 418,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "4",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 419,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "6",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 420,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "6",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 421,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "15",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 422,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs",
+          "evidence_id": 423,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 500,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 501,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "22",
+          "confidence": 0.7,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 502,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://www.figma.com/release-notes/",
+          "evidence_id": 503,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 624,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 625,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "42.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 626,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "60.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 627,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 628,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 629,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "56.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 630,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 631,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "77.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 632,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "74.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 633,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Airtable",
+      "website": "https://airtable.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://airtable.com/pricing",
+          "evidence_id": 100,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://airtable.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://airtable.com/pricing",
+          "evidence_id": 101,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://airtable.com/pricing",
+          "evidence_id": 102,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://airtable.com/developers",
+          "evidence_id": 103,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://airtable.com/developers",
+          "confidence": 0.9,
+          "source_url": "https://airtable.com/developers",
+          "evidence_id": 104,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://airtable.com/whatsnew",
+          "evidence_id": 105,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://airtable.com/whatsnew",
+          "confidence": 0.9,
+          "source_url": "https://airtable.com/whatsnew",
+          "evidence_id": 106,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://airtable.com/marketplace",
+          "evidence_id": 107,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://airtable.com/marketplace",
+          "confidence": 0.9,
+          "source_url": "https://airtable.com/marketplace",
+          "evidence_id": 108,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "gainsight_px,google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://airtable.com",
+          "evidence_id": 252,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.72",
+          "confidence": 0.72,
+          "source_url": "https://airtable.com",
+          "evidence_id": 253,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "21",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/airtable/jobs",
+          "evidence_id": 424,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/airtable/jobs",
+          "evidence_id": 425,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/airtable/jobs",
+          "evidence_id": 426,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/airtable/jobs",
+          "evidence_id": 427,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 634,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 635,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "1.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 636,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "2.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 637,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 638,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 639,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "56.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 640,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 641,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 642,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "45.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 643,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Calendly",
+      "website": "https://calendly.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://calendly.com/pricing",
+          "evidence_id": 109,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://calendly.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://calendly.com/pricing",
+          "evidence_id": 110,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://calendly.com/pricing",
+          "evidence_id": 111,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://calendly.com/pricing",
+          "evidence_id": 112,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developer.calendly.com",
+          "evidence_id": 113,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developer.calendly.com",
+          "confidence": 0.9,
+          "source_url": "https://developer.calendly.com",
+          "evidence_id": 114,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://calendly.com/release-notes",
+          "evidence_id": 115,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://calendly.com/release-notes",
+          "confidence": 0.9,
+          "source_url": "https://calendly.com/release-notes",
+          "evidence_id": 116,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://calendly.com/integration",
+          "evidence_id": 117,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://calendly.com/integration",
+          "confidence": 0.9,
+          "source_url": "https://calendly.com/integration",
+          "evidence_id": 118,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://calendly.com",
+          "evidence_id": 255,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.85",
+          "confidence": 0.85,
+          "source_url": "https://calendly.com",
+          "evidence_id": 256,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "23",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 428,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "4",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 429,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 430,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 431,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 432,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 433,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 434,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_ops_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/calendly/jobs",
+          "evidence_id": 435,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 644,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 645,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "33.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 646,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "7.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 647,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 648,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 649,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 650,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "83.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 651,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "13.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 652,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "61.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 653,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Miro",
+      "website": "https://miro.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://miro.com/pricing/",
+          "evidence_id": 119,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://miro.com/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://miro.com/pricing/",
+          "evidence_id": 120,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://miro.com/pricing/",
+          "evidence_id": 121,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://miro.com/pricing/",
+          "evidence_id": 122,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://miro.com/capabilities/docs/",
+          "evidence_id": 123,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://miro.com/capabilities/docs/",
+          "confidence": 0.9,
+          "source_url": "https://miro.com/capabilities/docs/",
+          "evidence_id": 124,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://miro.com/whats-new/",
+          "evidence_id": 125,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://miro.com/whats-new/",
+          "confidence": 0.9,
+          "source_url": "https://miro.com/whats-new/",
+          "evidence_id": 126,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://miro.com/apps/",
+          "evidence_id": 127,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://miro.com/apps/",
+          "confidence": 0.9,
+          "source_url": "https://miro.com/apps/",
+          "evidence_id": 128,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://miro.com",
+          "evidence_id": 258,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.85",
+          "confidence": 0.85,
+          "source_url": "https://miro.com",
+          "evidence_id": 259,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://miro.com/newsroom/",
+          "evidence_id": 504,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-19",
+          "confidence": 0.8,
+          "source_url": "https://miro.com/newsroom/",
+          "evidence_id": 505,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "6",
+          "confidence": 0.7,
+          "source_url": "https://miro.com/newsroom/",
+          "evidence_id": 506,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://miro.com/newsroom/",
+          "evidence_id": 507,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 654,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 655,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 656,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 657,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "51.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 658,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 659,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 660,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 661,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "40.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 662,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "60.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 663,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "ClickUp",
+      "website": "https://clickup.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://clickup.com/pricing",
+          "evidence_id": 129,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://clickup.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://clickup.com/pricing",
+          "evidence_id": 130,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://clickup.com/pricing",
+          "evidence_id": 131,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://clickup.com/api/",
+          "evidence_id": 132,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://clickup.com/api/",
+          "confidence": 0.9,
+          "source_url": "https://clickup.com/api/",
+          "evidence_id": 133,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://clickup.com/integrations/",
+          "evidence_id": 134,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://clickup.com/integrations/",
+          "confidence": 0.9,
+          "source_url": "https://clickup.com/integrations/",
+          "evidence_id": 135,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "ga4",
+          "confidence": 0.8,
+          "source_url": "https://clickup.com",
+          "evidence_id": 262,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.9",
+          "confidence": 0.9,
+          "source_url": "https://clickup.com",
+          "evidence_id": 263,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ga4_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://clickup.com",
+          "evidence_id": 260,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "73",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 436,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 437,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 438,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 439,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 440,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "10",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 441,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "3",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/clickup",
+          "evidence_id": 442,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 664,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 665,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "22.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 666,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "30.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 667,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 668,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 669,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "46.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 670,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "73.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 671,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "9.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 672,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "47.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 673,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Asana",
+      "website": "https://asana.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://asana.com/pricing",
+          "evidence_id": 136,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://asana.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://asana.com/pricing",
+          "evidence_id": 137,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://asana.com/product",
+          "evidence_id": 138,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://asana.com/pricing",
+          "evidence_id": 139,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developers.asana.com/docs/",
+          "evidence_id": 140,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developers.asana.com/docs/",
+          "confidence": 0.9,
+          "source_url": "https://developers.asana.com/docs/",
+          "evidence_id": 141,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://asana.com/whats-new",
+          "evidence_id": 142,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://asana.com/whats-new",
+          "confidence": 0.9,
+          "source_url": "https://asana.com/whats-new",
+          "evidence_id": 143,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://asana.com/apps",
+          "evidence_id": 144,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://asana.com/apps",
+          "confidence": 0.9,
+          "source_url": "https://asana.com/apps",
+          "evidence_id": 145,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "optimizely",
+          "confidence": 0.8,
+          "source_url": "https://asana.com",
+          "evidence_id": 266,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.95",
+          "confidence": 0.95,
+          "source_url": "https://asana.com",
+          "evidence_id": 267,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "132",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 443,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "4",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 444,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 445,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "5",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 446,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 447,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "13",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 448,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/asana/jobs",
+          "evidence_id": 449,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://asana.com/blog",
+          "evidence_id": 508,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://asana.com/blog",
+          "evidence_id": 509,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "7",
+          "confidence": 0.7,
+          "source_url": "https://asana.com/blog",
+          "evidence_id": 510,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://asana.com/blog",
+          "evidence_id": 511,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 674,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 675,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "33.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 676,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "51.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 677,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "54.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 678,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 679,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 680,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "96.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 681,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "55.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 682,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "74.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 683,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Loom",
+      "website": "https://loom.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://loom.com/pricing",
+          "evidence_id": 146,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://loom.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://loom.com/pricing",
+          "evidence_id": 147,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://loom.com/pricing",
+          "evidence_id": 148,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://loom.com/pricing",
+          "evidence_id": 149,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.loom.com/looms/videos?reminderToRecord=true",
+          "evidence_id": 150,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://www.loom.com/looms/videos?reminderToRecord=true",
+          "confidence": 0.9,
+          "source_url": "https://www.loom.com/looms/videos?reminderToRecord=true",
+          "evidence_id": 151,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "amplitude,google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://loom.com",
+          "evidence_id": 270,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "amplitude",
+          "confidence": 0.8,
+          "source_url": "https://loom.com",
+          "evidence_id": 272,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.9",
+          "confidence": 0.9,
+          "source_url": "https://loom.com",
+          "evidence_id": 271,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "amplitude_detected": {
+          "value": "True",
+          "confidence": 0.95,
+          "source_url": "https://loom.com",
+          "evidence_id": 268,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 684,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "33.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 685,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 686,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 687,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 688,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 689,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "79.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 690,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "33.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 691,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 692,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "40.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 693,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Amplitude",
+      "website": "https://amplitude.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://amplitude.com/pricing?siteLocation=nav",
+          "evidence_id": 152,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://amplitude.com/pricing?siteLocation=nav",
+          "confidence": 0.9,
+          "source_url": "https://amplitude.com/pricing?siteLocation=nav",
+          "evidence_id": 153,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://amplitude.com/pricing?siteLocation=nav",
+          "evidence_id": 154,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developers.amplitude.com/docs?siteLocation=footer",
+          "evidence_id": 155,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developers.amplitude.com/docs?siteLocation=footer",
+          "confidence": 0.9,
+          "source_url": "https://developers.amplitude.com/docs?siteLocation=footer",
+          "evidence_id": 156,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://amplitude.com/releases?siteLocation=nav",
+          "evidence_id": 157,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://amplitude.com/releases?siteLocation=nav",
+          "confidence": 0.9,
+          "source_url": "https://amplitude.com/releases?siteLocation=nav",
+          "evidence_id": 158,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://amplitude.com/community",
+          "evidence_id": 159,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://amplitude.com/community",
+          "confidence": 0.9,
+          "source_url": "https://amplitude.com/community",
+          "evidence_id": 160,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "amplitude,google_tag_manager",
+          "confidence": 0.8,
+          "source_url": "https://amplitude.com",
+          "evidence_id": 278,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "amplitude",
+          "confidence": 0.8,
+          "source_url": "https://amplitude.com",
+          "evidence_id": 280,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.9",
+          "confidence": 0.9,
+          "source_url": "https://amplitude.com",
+          "evidence_id": 279,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "amplitude_detected": {
+          "value": "True",
+          "confidence": 0.95,
+          "source_url": "https://amplitude.com",
+          "evidence_id": 273,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "61",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 450,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 451,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 452,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 453,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "4",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 454,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs",
+          "evidence_id": 455,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://amplitude.com/blog?siteLocation=nav",
+          "evidence_id": 512,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://amplitude.com/blog?siteLocation=nav",
+          "evidence_id": 513,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "15",
+          "confidence": 0.7,
+          "source_url": "https://amplitude.com/blog?siteLocation=nav",
+          "evidence_id": 514,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://amplitude.com/blog?siteLocation=nav",
+          "evidence_id": 515,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 694,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 695,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "12.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 696,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "13.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 697,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "82.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 698,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 699,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "86.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 700,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "83.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 701,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "58.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 702,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "60.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 703,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Mixpanel",
+      "website": "https://mixpanel.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://mixpanel.com/pricing/",
+          "evidence_id": 161,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://mixpanel.com/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://mixpanel.com/pricing/",
+          "evidence_id": 162,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://mixpanel.com/pricing/",
+          "evidence_id": 163,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://mixpanel.com/pricing/",
+          "evidence_id": 164,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://docs.mixpanel.com/",
+          "evidence_id": 165,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://docs.mixpanel.com/",
+          "confidence": 0.9,
+          "source_url": "https://docs.mixpanel.com/",
+          "evidence_id": 166,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://docs.mixpanel.com/changelogs",
+          "evidence_id": 167,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://docs.mixpanel.com/changelogs",
+          "confidence": 0.9,
+          "source_url": "https://docs.mixpanel.com/changelogs",
+          "evidence_id": 168,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://mixpanel.com/partners/integrations",
+          "evidence_id": 169,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://mixpanel.com/partners/integrations",
+          "confidence": 0.9,
+          "source_url": "https://mixpanel.com/partners/integrations",
+          "evidence_id": 170,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "google_tag_manager,mixpanel,optimizely",
+          "confidence": 0.8,
+          "source_url": "https://mixpanel.com",
+          "evidence_id": 287,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "mixpanel",
+          "confidence": 0.8,
+          "source_url": "https://mixpanel.com",
+          "evidence_id": 289,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.92",
+          "confidence": 0.92,
+          "source_url": "https://mixpanel.com",
+          "evidence_id": 288,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "mixpanel_detected": {
+          "value": "True",
+          "confidence": 0.95,
+          "source_url": "https://mixpanel.com",
+          "evidence_id": 283,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "37",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/mixpanel/jobs",
+          "evidence_id": 456,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/mixpanel/jobs",
+          "evidence_id": 457,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "3",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/mixpanel/jobs",
+          "evidence_id": 458,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/mixpanel/jobs",
+          "evidence_id": 459,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 704,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 705,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "1.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 706,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "6.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 707,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 708,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 709,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 710,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 711,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 712,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "55.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 713,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "PostHog",
+      "website": "https://posthog.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://posthog.com/pricing",
+          "evidence_id": 171,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://posthog.com/pricing",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com/pricing",
+          "evidence_id": 172,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://posthog.com/pricing",
+          "evidence_id": 173,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://posthog.com/pricing",
+          "evidence_id": 174,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://posthog.com/docs",
+          "evidence_id": 175,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://posthog.com/docs",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com/docs",
+          "evidence_id": 176,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://posthog.com/changelog",
+          "evidence_id": 177,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://posthog.com/changelog",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com/changelog",
+          "evidence_id": 178,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://posthog.com/integrations",
+          "evidence_id": 179,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://posthog.com/integrations",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com/integrations",
+          "evidence_id": 180,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "posthog",
+          "confidence": 0.8,
+          "source_url": "https://posthog.com",
+          "evidence_id": 294,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "posthog",
+          "confidence": 0.8,
+          "source_url": "https://posthog.com",
+          "evidence_id": 296,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.9",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com",
+          "evidence_id": 295,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "posthog_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://posthog.com",
+          "evidence_id": 293,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "15",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/posthog",
+          "evidence_id": 460,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/posthog",
+          "evidence_id": 461,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/posthog",
+          "evidence_id": 462,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 714,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 715,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 716,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "2.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 717,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 718,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 719,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 720,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 721,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 722,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "54.3",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 723,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Pendo",
+      "website": "https://pendo.io",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://pendo.io/pricing",
+          "evidence_id": 181,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://pendo.io/pricing",
+          "confidence": 0.9,
+          "source_url": "https://pendo.io/pricing",
+          "evidence_id": 182,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://pendo.io/pricing",
+          "evidence_id": 183,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://pendo.io/pricing",
+          "evidence_id": 184,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://developers.pendo.io/",
+          "evidence_id": 185,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://developers.pendo.io/",
+          "confidence": 0.9,
+          "source_url": "https://developers.pendo.io/",
+          "evidence_id": 186,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://www.pendo.io/new/",
+          "evidence_id": 187,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://www.pendo.io/new/",
+          "confidence": 0.9,
+          "source_url": "https://www.pendo.io/new/",
+          "evidence_id": 188,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://pendo.io/integrations/",
+          "evidence_id": 189,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://pendo.io/integrations/",
+          "confidence": 0.9,
+          "source_url": "https://pendo.io/integrations/",
+          "evidence_id": 190,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "ga4,gainsight_px,google_tag_manager,pendo",
+          "confidence": 0.8,
+          "source_url": "https://pendo.io",
+          "evidence_id": 304,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "pendo",
+          "confidence": 0.8,
+          "source_url": "https://pendo.io",
+          "evidence_id": 306,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.8",
+          "confidence": 0.8,
+          "source_url": "https://pendo.io",
+          "evidence_id": 305,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pendo_detected": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://pendo.io",
+          "evidence_id": 302,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ga4_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://pendo.io",
+          "evidence_id": 298,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "36",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/pendo/jobs",
+          "evidence_id": 463,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "growth_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/pendo/jobs",
+          "evidence_id": 464,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "4",
+          "confidence": 0.85,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/pendo/jobs",
+          "evidence_id": 465,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 724,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 725,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "4.6",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 726,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "8.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 727,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 728,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 729,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 730,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 731,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "1.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 732,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "56.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 733,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Heap",
+      "website": "https://heap.io",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://heap.io/pricing",
+          "evidence_id": 191,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://heap.io/pricing",
+          "confidence": 0.9,
+          "source_url": "https://heap.io/pricing",
+          "evidence_id": 192,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://heap.io/pricing",
+          "evidence_id": 193,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://heap.io/platform/developer",
+          "evidence_id": 194,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://heap.io/platform/developer",
+          "confidence": 0.9,
+          "source_url": "https://heap.io/platform/developer",
+          "evidence_id": 195,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://heap.io/platform/connect",
+          "evidence_id": 196,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://heap.io/platform/connect",
+          "confidence": 0.9,
+          "source_url": "https://heap.io/platform/connect",
+          "evidence_id": 197,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "contentsquare,heap,hotjar",
+          "confidence": 0.8,
+          "source_url": "https://heap.io",
+          "evidence_id": 313,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "heap",
+          "confidence": 0.8,
+          "source_url": "https://heap.io",
+          "evidence_id": 315,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.89",
+          "confidence": 0.89,
+          "source_url": "https://heap.io",
+          "evidence_id": 314,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "heap_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://heap.io",
+          "evidence_id": 310,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "hotjar_detected": {
+          "value": "True",
+          "confidence": 0.88,
+          "source_url": "https://heap.io",
+          "evidence_id": 311,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 734,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "67.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 735,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 736,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 737,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 738,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 739,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "76.9",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 740,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "66.8",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 741,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 742,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "38.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 743,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Hotjar",
+      "website": "https://hotjar.com",
+      "fields": {
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://hotjar.com/pricing",
+          "evidence_id": 198,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://hotjar.com/integrations",
+          "evidence_id": 199,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://hotjar.com/integrations",
+          "confidence": 0.9,
+          "source_url": "https://hotjar.com/integrations",
+          "evidence_id": 200,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_analytics_tools": {
+          "value": "contentsquare,google_tag_manager,heap,hotjar,optimizely,segment",
+          "confidence": 0.8,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 323,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "detected_product_analytics_tools": {
+          "value": "heap,segment",
+          "confidence": 0.8,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 325,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "technographic_confidence": {
+          "value": "0.9",
+          "confidence": 0.9,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 324,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "heap_detected": {
+          "value": "True",
+          "confidence": 0.9,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 318,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "segment_detected": {
+          "value": "True",
+          "confidence": 0.95,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 322,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "hotjar_detected": {
+          "value": "True",
+          "confidence": 0.88,
+          "source_url": "https://hotjar.com",
+          "evidence_id": 319,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "33.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 744,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "33.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 745,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 746,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 747,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 748,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 749,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "53.1",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 750,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "33.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 751,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "0.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 752,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "22.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 753,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Sentry",
+      "website": "https://sentry.io",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://sentry.io/pricing/",
+          "evidence_id": 201,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://sentry.io/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://sentry.io/pricing/",
+          "evidence_id": 202,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://sentry.io/pricing/",
+          "evidence_id": 203,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://sentry.io/pricing/",
+          "evidence_id": 204,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://docs.sentry.io/",
+          "evidence_id": 205,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://docs.sentry.io/",
+          "confidence": 0.9,
+          "source_url": "https://docs.sentry.io/",
+          "evidence_id": 206,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://sentry.io/changelog/",
+          "evidence_id": 207,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://sentry.io/changelog/",
+          "confidence": 0.9,
+          "source_url": "https://sentry.io/changelog/",
+          "evidence_id": 208,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://sentry.io/integrations/",
+          "evidence_id": 209,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://sentry.io/integrations/",
+          "confidence": 0.9,
+          "source_url": "https://sentry.io/integrations/",
+          "evidence_id": 210,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "39",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/sentry",
+          "evidence_id": 466,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/sentry",
+          "evidence_id": 467,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "data_jobs_count": {
+          "value": "2",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/sentry",
+          "evidence_id": 468,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "5",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/sentry",
+          "evidence_id": 469,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "4",
+          "confidence": 0.85,
+          "source_url": "https://api.ashbyhq.com/posting-api/job-board/sentry",
+          "evidence_id": 470,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://sentry.io/changelog/",
+          "evidence_id": 516,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-05-20",
+          "confidence": 0.8,
+          "source_url": "https://sentry.io/changelog/",
+          "evidence_id": 517,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "17",
+          "confidence": 0.7,
+          "source_url": "https://sentry.io/changelog/",
+          "evidence_id": 518,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://blog.sentry.io/",
+          "evidence_id": 519,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 754,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 755,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "11.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 756,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "20.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 757,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "89.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 758,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 759,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 760,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "86.7",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 761,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "60.2",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 762,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "70.4",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 763,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    },
+    {
+      "company_name": "Postman",
+      "website": "https://postman.com",
+      "fields": {
+        "has_public_pricing": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://postman.com/pricing/",
+          "evidence_id": 211,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "pricing_url": {
+          "value": "https://postman.com/pricing/",
+          "confidence": 0.9,
+          "source_url": "https://postman.com/pricing/",
+          "evidence_id": 212,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_free_trial": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://postman.com/pricing/",
+          "evidence_id": 213,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_freemium": {
+          "value": "True",
+          "confidence": 0.75,
+          "source_url": "https://postman.com/pricing/",
+          "evidence_id": 214,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_api_docs": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://learning.postman.com",
+          "evidence_id": 215,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "api_docs_url": {
+          "value": "https://learning.postman.com",
+          "confidence": 0.9,
+          "source_url": "https://learning.postman.com",
+          "evidence_id": 216,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_changelog": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://postman.com/new-postman/",
+          "evidence_id": 217,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "changelog_url": {
+          "value": "https://postman.com/new-postman/",
+          "confidence": 0.9,
+          "source_url": "https://postman.com/new-postman/",
+          "evidence_id": 218,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "has_integrations_page": {
+          "value": "True",
+          "confidence": 0.85,
+          "source_url": "https://postman.com/product/integrations/",
+          "evidence_id": 219,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "integrations_url": {
+          "value": "https://postman.com/product/integrations/",
+          "confidence": 0.9,
+          "source_url": "https://postman.com/product/integrations/",
+          "evidence_id": 220,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "open_jobs_count": {
+          "value": "116",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/postman/jobs",
+          "evidence_id": 471,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_jobs_count": {
+          "value": "2",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/postman/jobs",
+          "evidence_id": 472,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "analytics_jobs_count": {
+          "value": "1",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/postman/jobs",
+          "evidence_id": 473,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "ai_jobs_count": {
+          "value": "5",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/postman/jobs",
+          "evidence_id": 474,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "customer_success_jobs_count": {
+          "value": "6",
+          "confidence": 0.75,
+          "source_url": "https://boards-api.greenhouse.io/v1/boards/postman/jobs",
+          "evidence_id": 475,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launch_90d": {
+          "value": "True",
+          "confidence": 0.8,
+          "source_url": "https://postman.com/company/press-media/",
+          "evidence_id": 520,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "most_recent_launch_date": {
+          "value": "2026-04-16",
+          "confidence": 0.8,
+          "source_url": "https://postman.com/company/press-media/",
+          "evidence_id": 521,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_product_launches": {
+          "value": "3",
+          "confidence": 0.7,
+          "source_url": "https://postman.com/company/press-media/",
+          "evidence_id": 522,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "recent_ai_announcement": {
+          "value": "True",
+          "confidence": 0.65,
+          "source_url": "https://postman.com/company/press-media/",
+          "evidence_id": 523,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 0
+        },
+        "product_led_growth_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 764,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_maturity_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 765,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "hiring_signal_score": {
+          "value": "7.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 766,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "ai_readiness_hiring_score": {
+          "value": "10.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 767,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "market_event_score": {
+          "value": "40.5",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 768,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "freshness_score": {
+          "value": "100.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 769,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "product_analytics_fit_score": {
+          "value": "70.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 770,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "global_agent_fit_score": {
+          "value": "80.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 771,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "expansion_intelligence_fit_score": {
+          "value": "39.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 772,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        },
+        "overall_amplitude_fit_score_partial": {
+          "value": "62.0",
+          "confidence": 0.7,
+          "source_url": "score://phase1",
+          "evidence_id": 773,
+          "extraction_date": "2026-05-21",
+          "inference_flag": 1
+        }
+      }
+    }
+  ]
+}
