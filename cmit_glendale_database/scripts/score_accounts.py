@@ -103,9 +103,10 @@ def _build_briefing(acc, verticals_cfg):
     emp = acc.get("estimated_employees_display", "")
     risk = acc.get("specific_visible_risk", "")
 
+    portal_label = "patient portal" if vert in ("Dental", "Medical") else "client portal"
     triggers = []
     if sig.get("portal_detected"):
-        triggers.append("an online client/patient portal")
+        triggers.append(f"an online {portal_label}")
     if sig.get("payment_detected"):
         triggers.append("online payments")
     if sig.get("booking_detected"):

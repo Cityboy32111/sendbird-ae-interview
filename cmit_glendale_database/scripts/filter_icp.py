@@ -45,6 +45,18 @@ def _is_franchise(acc, verticals_cfg):
     return None
 
 
+def _is_enterprise(acc, verticals_cfg):
+    # National health systems, hospital networks, and big brokerages are not
+    # local-SMB managed-IT prospects; their "decision makers" are national execs.
+    name = (acc.get("company_name") or "").lower()
+    domain = (acc.get("domain") or "").lower()
+    for brand in verticals_cfg.get("enterprise_exclusions", []):
+        token = brand.replace(" ", "")
+        if brand in name or token in domain.replace("-", "").replace(".", ""):
+            return brand
+    return None
+
+
 def _looks_solo(acc):
     name = (acc.get("company_name") or "").lower()
     return any(h in name for h in SOLO_HINTS)
@@ -87,6 +99,9 @@ def filter_accounts(week):
         fr = _is_franchise(acc, verticals_cfg)
         if fr:
             drop(acc, f"national_franchise:{fr}"); continue
+        ent = _is_enterprise(acc, verticals_cfg)
+        if ent:
+            drop(acc, f"enterprise_or_chain:{ent}"); continue
         if domain in seen["domain"]:
             drop(acc, "duplicate_domain"); continue
         if ncompany in seen["company"]:

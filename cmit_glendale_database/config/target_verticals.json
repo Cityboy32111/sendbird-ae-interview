@@ -61,5 +61,14 @@
     "h&r block", "jackson hewitt", "liberty tax", "aspen dental", "western dental",
     "allstate", "state farm", "farmers insurance", "geico", "edward jones",
     "ameriprise", "merrill lynch", "morgan stanley", "wells fargo advisors"
+  ],
+  "enterprise_exclusions": [
+    "kaiser permanente", "kaiser", "optum", "ucla", "usc keck", "keck medicine",
+    "cedars-sinai", "cedars sinai", "providence health", "providence saint",
+    "dignity health", "adventist health", "prospect medical", "west coast dental",
+    "planned parenthood", "concentra", "carbon health", "one medical",
+    "city of hope", "children's hospital", "childrens hospital", "memorialcare",
+    "select physical therapy", "athletico", "marsh mclennan", "aon plc",
+    "gallagher", "hub international", "northwestern mutual"
   ]
 }

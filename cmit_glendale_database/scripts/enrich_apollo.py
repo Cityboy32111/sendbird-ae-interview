@@ -108,9 +108,14 @@ def enrich_all(week, limit=None):
                 continue
             if _name_is_company(person, q["company_name"]):
                 continue
+            full_name = f"{person.get('first_name','')} {person.get('last_name','')}".strip()
+            # Require a real first + last name; Apollo sometimes returns only a
+            # first name (e.g. "Richards"), which fails the QA real-person check.
+            if not person.get("first_name") or not person.get("last_name") or len(full_name.split()) < 2:
+                continue
             chosen = {
                 "account_id": q["account_id"],
-                "person_name": f"{person.get('first_name','')} {person.get('last_name','')}".strip(),
+                "person_name": full_name,
                 "title": person.get("title", ""),
                 "email": email.lower(),
                 "email_status": status or "verified",
