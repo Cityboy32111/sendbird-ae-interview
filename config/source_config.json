@@ -1,0 +1,155 @@
+{
+  "_meta": {
+    "description": "Source acquisition plan for the External Product Intelligence Graph. Defines, per data category, the collection method (code-first vs Apify Actor), the data-rights tier (cross-reference docs/data_rights_matrix.md), refresh cadence, and which schema fields it populates. NOTHING here runs until Phase 1 is approved.",
+    "version": "0.1.0-phase0-draft",
+    "method_policy": "Code-first (requests / Playwright / BeautifulSoup / trafilatura / Crawlee). Fall back to Apify only when blocked, when a strong Actor saves >2h, or when scale/browser-automation is required. Never use Apify for clean static pages or simple RSS.",
+    "compliance": "Honor robots.txt and rate limits. Store source_url + extraction_date for every record. No login-protected, private, or sensitive personal data."
+  },
+
+  "categories": {
+    "website": {
+      "phase": 2,
+      "tier": "SAFE_PUBLIC",
+      "method": "code_first",
+      "tools": ["requests", "playwright", "beautifulsoup", "trafilatura", "crawlee"],
+      "apify_fallback_actor": "Website Content Crawler",
+      "apify_fallback_when": "JS-rendered or bot-blocked pages only",
+      "targets": ["homepage", "pricing", "product", "integrations", "api_docs", "changelog", "blog", "careers"],
+      "populates": [
+        "has_free_trial", "has_freemium", "has_public_pricing", "pricing_url",
+        "has_api_docs", "api_docs_url", "has_changelog", "changelog_url",
+        "has_integrations_page", "integrations_url", "primary_product_category",
+        "target_customer_type", "recent_product_launches", "recent_pricing_changes"
+      ],
+      "cadence": "monthly"
+    },
+
+    "technographics": {
+      "phase": 3,
+      "tier": "SAFE_PUBLIC_for_code_detection / REQUIRES_LICENSE_for_builtwith",
+      "method": "code_first",
+      "techniques": ["scan_html", "scan_script_tags", "scan_tag_manager", "scan_privacy_policy_vendors", "scan_docs_sdk_mentions"],
+      "licensed_replacement": "BuiltWith Enterprise feed",
+      "detect": [
+        "amplitude", "mixpanel", "heap", "pendo", "posthog", "ga", "ga4", "segment",
+        "snowplow", "fullstory", "hotjar", "launchdarkly", "optimizely", "vwo",
+        "intercom", "zendesk", "gainsight", "uservoice", "sprig", "qualtrics",
+        "medallia", "contentsquare"
+      ],
+      "populates": [
+        "detected_analytics_tools", "detected_product_analytics_tools",
+        "detected_session_replay_tools", "detected_experimentation_tools",
+        "detected_customer_feedback_tools", "detected_data_stack_tools",
+        "amplitude_detected", "mixpanel_detected", "heap_detected", "pendo_detected",
+        "posthog_detected", "segment_detected", "ga4_detected", "fullstory_detected",
+        "hotjar_detected", "technographic_confidence"
+      ],
+      "cadence": "monthly"
+    },
+
+    "jobs": {
+      "phase": 4,
+      "tier": "SAFE_PUBLIC_for_company_careers / SCRAPED_RISKY_for_linkedin",
+      "method": "code_first_for_careers_pages",
+      "apify_actors": ["LinkedIn Jobs Scraper", "Google Jobs Scraper", "Indeed Jobs Scraper"],
+      "apify_when": "Aggregated job boards / scale; company careers pages scraped directly first",
+      "keywords": [
+        "product manager", "growth product manager", "product analyst", "data analyst",
+        "data scientist", "analytics engineer", "product operations", "growth marketing",
+        "customer success operations", "AI product manager", "ML engineer", "LLM",
+        "agent", "MCP", "experimentation", "lifecycle", "activation", "retention"
+      ],
+      "populates": [
+        "open_jobs_count", "product_jobs_count", "growth_jobs_count", "data_jobs_count",
+        "analytics_jobs_count", "ai_jobs_count", "customer_success_jobs_count",
+        "product_ops_jobs_count", "job_titles_detected", "job_posting_urls",
+        "hiring_signal_score", "ai_readiness_hiring_score"
+      ],
+      "cadence": "weekly"
+    },
+
+    "external_feedback": {
+      "phase": 5,
+      "tier": "MIXED — see data_rights_matrix.md (Reddit SAMPLE_TOLERABLE; G2/Capterra SCRAPED_RISKY; App Store/Google Play SAMPLE_TOLERABLE w/ official-API replacement)",
+      "method": "apify_for_review_platforms",
+      "apify_actors": [
+        "G2 Reviews Scraper", "Reddit Scraper", "Apple App Store Reviews Scraper",
+        "Google Play Reviews Scraper", "Trustpilot Scraper", "Capterra Scraper",
+        "Product Hunt Scraper"
+      ],
+      "storage_policy": "Store short evidence excerpts only + source_url + extraction_date. Do not over-quote copyrighted content in final outputs.",
+      "theme_taxonomy": [
+        "onboarding", "pricing", "analytics", "reporting", "performance", "bugs",
+        "missing integrations", "mobile issues", "support", "documentation",
+        "implementation", "AI features", "data quality", "security", "admin controls",
+        "collaboration", "exports", "dashboards", "workflow friction"
+      ],
+      "populates": [
+        "g2_review_count", "g2_average_rating", "g2_recent_negative_themes",
+        "g2_recent_positive_themes", "reddit_mentions_count", "reddit_feedback_themes",
+        "app_store_review_count", "app_store_rating", "app_store_negative_themes",
+        "google_play_review_count", "google_play_rating", "google_play_negative_themes",
+        "community_feedback_sources", "external_feedback_volume_score",
+        "external_feedback_pain_score"
+      ],
+      "cadence": "weekly"
+    },
+
+    "competitive_intel": {
+      "phase": 6,
+      "tier": "SAFE_PUBLIC_for_company_pages / SAMPLE_TOLERABLE_for_search",
+      "method": "code_first_for_company_pages",
+      "apify_actors": ["Google Search Results Scraper"],
+      "search_queries": [
+        "{company} competitors", "{company} alternatives", "{company} vs",
+        "{company} pricing", "{company} reviews", "{company} G2",
+        "{company} Product Hunt", "{company} Reddit", "{company} changelog",
+        "{company} integrations", "{company} API"
+      ],
+      "populates": [
+        "known_competitors", "competitor_mentions_in_reviews",
+        "competitor_comparison_pages_found", "alternative_pages_found",
+        "replacement_language_detected", "pricing_pressure_detected",
+        "feature_gap_themes", "competitive_pressure_score"
+      ],
+      "cadence": "monthly"
+    },
+
+    "market_events": {
+      "phase": 7,
+      "tier": "SAFE_PUBLIC_for_owned_content / SAMPLE_TOLERABLE_for_search",
+      "method": "code_first_for_rss_blogs",
+      "apify_actors": ["Google Search Results Scraper"],
+      "targets": [
+        "recent_product_launches", "blog_announcements", "changelog_entries",
+        "press_releases", "funding_announcements", "executive_changes",
+        "ai_announcements", "integration_launches", "market_expansion",
+        "security_compliance_announcements"
+      ],
+      "populates": [
+        "recent_product_launches", "recent_integration_launches",
+        "recent_pricing_changes", "recent_funding_event", "recent_executive_change",
+        "recent_geography_expansion", "recent_ai_announcement",
+        "recent_security_or_compliance_announcement", "market_event_score"
+      ],
+      "cadence": "weekly"
+    }
+  },
+
+  "refresh_cadence_summary": {
+    "jobs": "weekly",
+    "external_feedback": "weekly",
+    "market_events": "weekly",
+    "website": "monthly",
+    "technographics": "monthly",
+    "competitive_intel": "monthly"
+  },
+
+  "apify_actor_evaluation_checklist": [
+    "Check input schema, pricing, limits, output fields",
+    "Run a 3-company test",
+    "Save sample output to data/raw/",
+    "Map Actor fields to internal schema",
+    "Log run in logs/run_log.json"
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "_meta": {
+    "description": "Tunable scoring configuration for the External Product Intelligence Graph. All scores are 0-100. Formulas live here so weights can be changed without code changes. Component sub-scores are computed by the scoring functions referenced in scripts/score_companies.py; this file defines their weights, inputs, and normalization.",
+    "version": "0.1.0-phase0-draft",
+    "score_range": [0, 100],
+    "confidence_floor": 0.6,
+    "notes": "Confidence floor (R1): any field with confidence < 0.6 is nulled in exported CSV/JSON but retained in the DB. Scores derived from below-floor fields are flagged low-confidence."
+  },
+
+  "overall_amplitude_fit_score": {
+    "method": "weighted_sum",
+    "weights": {
+      "product_led_growth_score": 0.20,
+      "product_maturity_score": 0.15,
+      "hiring_signal_score": 0.15,
+      "external_feedback_volume_score": 0.15,
+      "external_feedback_pain_score": 0.10,
+      "competitive_pressure_score": 0.10,
+      "ai_readiness_hiring_score": 0.10,
+      "freshness_score": 0.05
+    },
+    "weights_sum_check": 1.00
+  },
+
+  "product_specific_fit_scores": {
+    "ai_feedback_fit_score": {
+      "maps_to": "Amplitude AI Feedback (external customer voice synthesis)",
+      "method": "weighted_sum",
+      "inputs": {
+        "external_feedback_volume_score": 0.35,
+        "external_feedback_pain_score": 0.25,
+        "g2_review_count_normalized": 0.15,
+        "reddit_mentions_count_normalized": 0.10,
+        "app_store_review_count_normalized": 0.10,
+        "community_feedback_sources_count_normalized": 0.05
+      }
+    },
+    "global_agent_fit_score": {
+      "maps_to": "Amplitude AI Agents / Global Agent (rich context requirement)",
+      "method": "weighted_sum",
+      "inputs": {
+        "product_maturity_score": 0.25,
+        "has_api_docs": 0.15,
+        "has_integrations_page": 0.10,
+        "integration_breadth_normalized": 0.15,
+        "data_jobs_count_normalized": 0.15,
+        "experimentation_language_detected": 0.10,
+        "detected_analytics_tools_count_normalized": 0.10
+      }
+    },
+    "product_analytics_fit_score": {
+      "maps_to": "Core Amplitude Analytics (expansion or competitive displacement)",
+      "method": "weighted_sum",
+      "inputs": {
+        "product_led_growth_score": 0.30,
+        "has_free_trial": 0.15,
+        "has_freemium": 0.15,
+        "has_public_pricing": 0.10,
+        "product_maturity_score": 0.15,
+        "detected_product_analytics_tools_count_normalized": 0.15
+      }
+    },
+    "expansion_intelligence_fit_score": {
+      "maps_to": "Amplitude Audiences / account expansion intelligence",
+      "method": "weighted_sum",
+      "inputs": {
+        "recent_funding_event": 0.20,
+        "hiring_signal_score": 0.20,
+        "recent_product_launches_count_normalized": 0.15,
+        "recent_geography_expansion": 0.15,
+        "recent_executive_change": 0.15,
+        "recent_integration_launches_count_normalized": 0.15
+      }
+    },
+    "customer_success_fit_score": {
+      "maps_to": "Amplitude Activation AI / customer health intelligence",
+      "method": "weighted_sum",
+      "inputs": {
+        "external_feedback_pain_score": 0.30,
+        "g2_recent_negative_themes_count_normalized": 0.20,
+        "app_store_negative_themes_count_normalized": 0.15,
+        "feature_gap_themes_count_normalized": 0.15,
+        "customer_success_jobs_count_normalized": 0.10,
+        "replacement_language_detected": 0.10
+      }
+    }
+  },
+
+  "component_score_definitions": {
+    "product_led_growth_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "has_free_trial": 0.30,
+        "has_freemium": 0.30,
+        "has_public_pricing": 0.20,
+        "has_self_serve_signup_detected": 0.20
+      }
+    },
+    "product_maturity_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "has_api_docs": 0.25,
+        "has_changelog": 0.20,
+        "has_integrations_page": 0.20,
+        "has_mobile_app": 0.15,
+        "integration_breadth_normalized": 0.20
+      }
+    },
+    "hiring_signal_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "product_jobs_count_normalized": 0.25,
+        "data_jobs_count_normalized": 0.20,
+        "analytics_jobs_count_normalized": 0.20,
+        "growth_jobs_count_normalized": 0.15,
+        "product_ops_jobs_count_normalized": 0.10,
+        "open_jobs_count_normalized": 0.10
+      }
+    },
+    "ai_readiness_hiring_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "ai_jobs_count_normalized": 0.50,
+        "ai_keywords_in_jds_normalized": 0.30,
+        "data_jobs_count_normalized": 0.20
+      },
+      "ai_keywords": ["AI", "ML", "LLM", "agent", "MCP", "experimentation", "machine learning", "GenAI"]
+    },
+    "external_feedback_volume_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "g2_review_count_normalized": 0.30,
+        "reddit_mentions_count_normalized": 0.20,
+        "app_store_review_count_normalized": 0.20,
+        "google_play_review_count_normalized": 0.15,
+        "community_feedback_sources_count_normalized": 0.15
+      }
+    },
+    "external_feedback_pain_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "g2_recent_negative_themes_count_normalized": 0.30,
+        "app_store_negative_themes_count_normalized": 0.20,
+        "google_play_negative_themes_count_normalized": 0.15,
+        "reddit_negative_feedback_themes_count_normalized": 0.20,
+        "feature_gap_themes_count_normalized": 0.15
+      },
+      "note": "Higher = more emerging pain. Pain is a positive signal for Amplitude fit (Activation AI / AI Feedback), not a negative for the target company."
+    },
+    "competitive_pressure_score": {
+      "method": "weighted_sum",
+      "inputs": {
+        "competitor_comparison_pages_found_normalized": 0.25,
+        "alternative_pages_found_normalized": 0.20,
+        "competitor_mentions_in_reviews_normalized": 0.20,
+        "replacement_language_detected": 0.20,
+        "pricing_pressure_detected": 0.15
+      }
+    },
+    "freshness_score": {
+      "method": "recency_decay",
+      "input": "max(extraction_date) across a company's evidence rows",
+      "decay": {
+        "0_7_days": 100,
+        "8_30_days": 85,
+        "31_60_days": 65,
+        "61_90_days": 45,
+        "91_plus_days": 20
+      }
+    }
+  },
+
+  "normalization": {
+    "method": "min_max_capped_percentile",
+    "description": "Count-based inputs (e.g. *_count) are normalized to 0-1 against the sample distribution using a capped 95th-percentile min-max, so outliers do not dominate. Boolean inputs map true->1.0, false->0.0. Detected-tool flags map to 1.0/0.0.",
+    "percentile_cap": 0.95
+  },
+
+  "reason_for_score": {
+    "requirement": "Must be a one-paragraph explanation referencing specific evidence rows (evidence_id values). Generated in Phase 8 LLM pass under rules R1-R7.",
+    "must_cite_evidence_ids": true
+  },
+
+  "best_pitch_angle": {
+    "requirement": "Must name exactly one Amplitude product surface and one specific external signal (with evidence_id) that justifies it.",
+    "allowed_surfaces": [
+      "AI Feedback",
+      "AI Agents",
+      "Global Agent",
+      "Audiences",
+      "Activation AI",
+      "Analytics",
+      "Experimentation",
+      "Session Replay"
+    ]
+  }
+}
