@@ -71,18 +71,27 @@ def enrich_person(key, person_id, domain, log):
         return {}
 
 
-def enrich_all(week, limit=None):
+def enrich_all(week, limit=None, resume=False):
     log = c.get_logger("enrich_apollo", week)
     key = c.require_secret("APOLLO_API_KEY")
     title_cfg = c.load_config("title_filters.json")
     tiers = title_cfg["title_tiers"]
     reject_patterns = title_cfg["reject_email_patterns"]
     queue = c.load_json(c.processed_path(week, "apollo_queue.json"), []) or []
-    if limit:
-        queue = queue[:limit]
     raw_dir = c.RAW_APOLLO / week
 
+    # Resume: reuse contacts already verified on a prior run and only spend
+    # credits on accounts not yet enriched.
     contacts = []
+    done_ids = set()
+    if resume:
+        contacts = c.load_json(c.processed_path(week, "apollo_contacts.json"), []) or []
+        done_ids = {ct["account_id"] for ct in contacts}
+        queue = [q for q in queue if q["account_id"] not in done_ids]
+        log.info("resume: %d already enriched, %d remaining in queue", len(done_ids), len(queue))
+    if limit:
+        queue = queue[:limit]
+
     for i, q in enumerate(queue, 1):
         domain = q["domain"]
         resp = search_people(key, domain, title_cfg["accepted_titles"], log)
@@ -142,6 +151,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--week", required=True)
     ap.add_argument("--limit", type=int, default=None, help="debug: cap accounts sent to Apollo")
+    ap.add_argument("--resume", action="store_true", help="skip accounts already enriched; append new contacts")
     args = ap.parse_args()
     c.load_env()
-    enrich_all(args.week, args.limit)
+    enrich_all(args.week, args.limit, args.resume)
