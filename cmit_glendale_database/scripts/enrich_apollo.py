@@ -45,11 +45,11 @@ def search_people(key, domain, titles, log):
         "per_page": 10,
     }
     try:
-        r = requests.post(f"{API}/mixed_people/search", headers=_headers(key), json=body, timeout=60)
+        r = requests.post(f"{API}/mixed_people/api_search", headers=_headers(key), json=body, timeout=60)
         if r.status_code == 429:
             log.warning("Apollo rate limited; backing off 20s")
             time.sleep(20)
-            r = requests.post(f"{API}/mixed_people/search", headers=_headers(key), json=body, timeout=60)
+            r = requests.post(f"{API}/mixed_people/api_search", headers=_headers(key), json=body, timeout=60)
         r.raise_for_status()
         return r.json()
     except requests.RequestException as e:
@@ -88,13 +88,14 @@ def enrich_all(week, limit=None):
         resp = search_people(key, domain, title_cfg["accepted_titles"], log)
         c.save_json(raw_dir / f"{q['account_id']}_search.json", resp)
         people = resp.get("people", []) or resp.get("contacts", [])
-        # rank candidates by title tier
+        # api_search returns masked candidates (id + title); rank by title tier,
+        # then enrich the best ones via people/match to reveal name + email.
         ranked = sorted(people, key=lambda p: _title_rank(p.get("title"), tiers))
         chosen = None
         for p in ranked:
             if _title_rank(p.get("title"), tiers) == 99:
                 continue
-            if _name_is_company(p, q["company_name"]):
+            if p.get("has_email") is False:
                 continue
             enriched = enrich_person(key, p.get("id"), domain, log)
             c.save_json(raw_dir / f"{q['account_id']}_{p.get('id')}.json", enriched or p)
@@ -103,7 +104,9 @@ def enrich_all(week, limit=None):
             status = person.get("email_status") or ""
             if not email or _is_generic(email, reject_patterns):
                 continue
-            if status and status not in ("verified", "likely to engage"):
+            if status != "verified":
+                continue
+            if _name_is_company(person, q["company_name"]):
                 continue
             chosen = {
                 "account_id": q["account_id"],
