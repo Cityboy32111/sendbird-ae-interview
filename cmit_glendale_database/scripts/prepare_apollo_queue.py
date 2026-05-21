@@ -20,11 +20,14 @@ def prepare(week):
     accounts = c.load_json(c.processed_path(week, "accounts_scored.json"), []) or []
     queue_size = rules.get("apollo_queue_size", 100)
 
-    # prefer accounts in the ideal employee band, then by score
+    # Prefer accounts Apollo is likely to cover: a LinkedIn company page is the
+    # strongest predictor of a findable decision maker, then the ideal employee
+    # band, then score.
     def sort_key(a):
         mid = _emp_mid(a)
         in_band = 1 if 8 <= mid <= 30 else 0
-        return (in_band, a.get("total_score", 0))
+        has_linkedin = 1 if a.get("linkedin_company_url") else 0
+        return (has_linkedin, in_band, a.get("total_score", 0))
 
     ranked = sorted(accounts, key=sort_key, reverse=True)
     queue = []

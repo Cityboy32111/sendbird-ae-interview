@@ -36,7 +36,11 @@ KEYWORD_GROUPS = {
 PORTAL_HINTS = ["portal", "client login", "patient login", "secure login", "/login"]
 BOOKING_HINTS = ["book online", "schedule", "appointment", "booking", "calendly", "acuity"]
 PAYMENT_HINTS = ["pay online", "pay now", "make a payment", "bill pay", "/payment"]
-STAFF_TITLE_RX = re.compile(r"\b(attorney|partner|dds|dmd|md|do|cpa|esq|rn|np|pa-c|dr\.|doctor|hygienist|associate|principal|director|manager)\b", re.I)
+# Count distinct named professionals (Name + credential, or title + Name),
+# not raw keyword occurrences which over-count a solo practitioner's site.
+NAME_CRED_RX = re.compile(r"\b([A-Z][a-z]+(?:\s+[A-Z]\.?)?\s+[A-Z][a-z]+)\s*,?\s*(?:Esq\.?|CPA|M\.?D\.?|DDS|DMD|DO|J\.?D\.?|Ph\.?D\.?|RN|NP|PA-C)\b")
+TITLE_NAME_RX = re.compile(r"\b(?:Attorney|Dr\.?|Partner|Founder|Principal|Dentist|Physician)\s+([A-Z][a-z]+\s+[A-Z][a-z]+)\b")
+ZIP_RX = re.compile(r"\bca\s+(\d{5})\b")
 
 
 def _fetch(url, log):
@@ -67,9 +71,17 @@ def _discover_pages(base_url, home_html):
 def _count_staff(html):
     soup = BeautifulSoup(html, "html.parser")
     text = soup.get_text(" ", strip=True)
-    titles = len(STAFF_TITLE_RX.findall(text))
-    cards = len(soup.select(".team-member, .staff-member, .attorney, .provider, .doctor, .bio, .profile"))
-    return max(titles, cards)
+    names = set()
+    for rx in (NAME_CRED_RX, TITLE_NAME_RX):
+        for m in rx.findall(text):
+            names.add(m.strip().lower())
+    cards = len(soup.select(".team-member, .staff-member, .attorney, .provider, .doctor, .bio, .profile, .person, .team__member"))
+    return max(len(names), cards)
+
+
+def _count_locations(blob):
+    zips = set(ZIP_RX.findall(blob))
+    return max(1, min(len(zips), 6))
 
 
 def scrape_one(acc, log):
@@ -107,7 +119,7 @@ def scrape_one(acc, log):
         "staff_count": staff_count,
         "provider_count": staff_count,
         "professional_count": staff_count,
-        "num_locations": max(1, blob.count("location") // 8 + (2 if "locations" in blob else 0) - 1) if "location" in blob else 1,
+        "num_locations": _count_locations(blob),
         "services_count": services_count,
         "forms_detected": "forms" in pages or "<form" in blob,
         "portal_detected": any(h in blob for h in PORTAL_HINTS),

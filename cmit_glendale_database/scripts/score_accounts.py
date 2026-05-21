@@ -16,11 +16,20 @@ def _employee_fit(acc, curve):
     mid = (lo + hi) / 2 if hi else 0
     imin, imax = curve["ideal_min"], curve["ideal_max"]
     buf = curve["near_range_buffer"]
+    # A firm whose upper estimate is below the ideal floor is too small to fit,
+    # regardless of where the midpoint lands.
+    if hi and hi < imin:
+        return curve["out_of_range_score"]
     if imin <= mid <= imax:
-        return curve["in_range_score"]
-    if (imin - buf) <= mid <= (imax + buf):
-        return curve["near_range_score"]
-    return curve["out_of_range_score"]
+        score = curve["in_range_score"]
+    elif (imin - buf) <= mid <= (imax + buf):
+        score = curve["near_range_score"]
+    else:
+        score = curve["out_of_range_score"]
+    # Don't award a full in-band score on a low-confidence (review-only) guess.
+    if acc.get("employee_confidence") == "low":
+        score = min(score, curve["near_range_score"])
+    return score
 
 
 def _security_gap(acc, rules):
