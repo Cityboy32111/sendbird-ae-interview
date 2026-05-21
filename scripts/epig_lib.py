@@ -79,6 +79,13 @@ def init_db(conn: sqlite3.Connection) -> None:
             id INTEGER PRIMARY KEY,
             phase TEXT, company_id INTEGER, status TEXT, detail TEXT, ts TEXT
         );
+        CREATE TABLE IF NOT EXISTS external_signals (
+            id INTEGER PRIMARY KEY,
+            company_id INTEGER, source_type TEXT, source_url TEXT,
+            theme TEXT, sentiment TEXT, evidence_span TEXT,
+            confidence REAL, extraction_date TEXT,
+            demo_only INTEGER DEFAULT 0, maps_to_amplitude TEXT
+        );
         """
     )
     conn.commit()
