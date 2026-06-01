@@ -5,6 +5,7 @@ all client-facing text for forbidden methodology terms. Writes qa_results.json
 (consumed by build_workbook). Returns pass/fail; the orchestrator gates on it.
 """
 import argparse
+import re
 
 import common as c
 
@@ -27,7 +28,9 @@ def run_qa(week):
     allow_cities = {x.lower() for x in cities_cfg["cities"]}
     accepted_titles = [t.lower() for t in title_cfg["accepted_titles"]]
     info_parts = set(rules["info_email_local_parts"])
-    forbidden = [t.lower() for t in rules["forbidden_workbook_terms"]]
+    # Require word-boundary matches so short tokens (SPF, DNS, MX) don't false
+    # trigger inside URLs or identifiers like a Google Maps place_id.
+    forbidden = [re.compile(rf"\b{re.escape(t)}\b", re.I) for t in rules["forbidden_workbook_terms"]]
     target = rules["required_final_count"]
 
     domains = [c.normalize_domain(a.get("domain")) for a in final]
@@ -73,8 +76,8 @@ def run_qa(week):
         return d not in set(excl.get("domains", [])) and e not in set(excl.get("emails", []))
 
     def no_methodology(a):
-        blob = " ".join(str(a.get(f, "")) for f in CLIENT_TEXT_FIELDS).lower()
-        return not any(term in blob for term in forbidden)
+        blob = " ".join(str(a.get(f, "")) for f in CLIENT_TEXT_FIELDS)
+        return not any(rx.search(blob) for rx in forbidden)
 
     checks = [
         ("Exactly {} final records".format(target), len(final) == target, f"{len(final)} records"),
